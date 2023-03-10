@@ -1,0 +1,53 @@
+@import 'src/CommonStyles/main.module';
+
+.itemsInfoContainer {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+  @include flex($dir: row, $just: center, $ali: flex-start);
+
+  .imageContainer {
+    border: 1px solid #e2e5f4;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .itemsInfo {
+    @include flex($dir: column, $just: center, $ali: flex-start);
+    margin-left: 20px;
+    box-sizing: border-box;
+
+    .attributesContainer {
+      @include flex($dir: column, $just: center, $ali: flex-start);
+      border: 1px solid #e2e5f4;
+      border-radius: 10px;
+      box-sizing: border-box;
+      padding: 20px;
+
+      h4 {
+        font-size: 20px;
+      }
+
+      .attributes {
+        @include flex($dir: column, $just: center, $ali: flex-start);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-top: 1px solid #e2e5f4;
+        border-bottom: 1px solid #e2e5f4;
+        box-sizing: border-box;
+
+        .attributesValue {
+          padding: 10px;
+          box-sizing: border-box;
+
+
+          .traitType {
+            color: #9b9ca6;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

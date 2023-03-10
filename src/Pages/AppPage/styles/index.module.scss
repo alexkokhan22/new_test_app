@@ -1,0 +1,8 @@
+@import 'src/CommonStyles/main.module';
+
+.appPageContainer {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  @include flex($dir: column, $just: center, $ali: center);
+}
